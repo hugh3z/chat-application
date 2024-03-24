@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fff;
+  }
+  
+  .sidenav {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 45px;
+    left: 0;
+    background-color: #007bff;
+    overflow-x: hidden;
+}
+
+.inbox__people {
+    color: white;
+    padding: 16px;
+}
+
+.sidenav a {
+    color: white;
+    padding: 16px;
+    text-decoration: none;
+    display: block;
+}
+  
+.content {
+    margin-left: 200px; 
+    padding-left: 20px;
+}
+
+nav {
+    background-color: #ffe8a2;
+    overflow: hidden;
+    position: fixed; 
+    top: 0; 
+    width: 100%; 
+    z-index: 2; 
+}
+
+nav a {
+    float: left;
+    display: block;
+    color: #6c757c;
+    text-align: center;
+    padding: 16px 216px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #94bdea;
+    color: black;
+}
+
+h1, h2,h3{
+    color: #94bdea
+    }
+   h4{
+    color: #fff;
+    padding: 10px;
+   }
+
+  p{
+    color: #fff;
+    text-shadow: 
+      -1px -1px 0 #007bff,  
+      1px -1px 0 #007bff,
+      -1px  1px 0 #007bff,
+      1px  1px 0 #007bff;
+  }
+
+.message_form {
+  margin-top: 50px; 
+}
+
+.message_form__button{
+  color: black;
+  background-color: #ffe8a2;
+}
+
+.button {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  border: 2px solid #007bff; 
+  color: #007bff; 
+  background-color: #ffe8a2; 
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+  margin-right: 10px; 
+  }
+
+.button:hover {
+  background-color: #94bdea; 
+  color: #fff; 
+}
+
+.landmark, Beach, golf, university {
+  background-color: #fffecd;
+  padding: 20px;
+  margin-bottom: 20px;
+  }
+
+.landmark, Beach, golf, university h2 {
+  color: #0781a5;
+  }
+
+.landmark, Beach, golf, university h3 {
+  color: #0781a5;
+}
+
+.landmark, Beach, golf, university h4 {
+  color: #0781a5;
+}
+
+.landmark, Beach, golf, university p {
+  color: #05485c;
+  }
+.card {
+  background-color: #fffecd;
+  border-style: dotted;
+  border-color: #dad231ecd;
+  border-width: 10px;
+}
