@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="/css/chat.css" />
+  </head>
+  <body>
+    <div class="sidenav">
+        <div class="inbox__people">
+            <h4>Active users</h4>
+          </div>
+
+      </div>
+
+      
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="chat.html">Contact</a>
+      </nav>   
+      <br>
+      <hr>
+      <div class="content">
+
+        <h2> Contact Page </h2>
+
+        <h3> Use the message box below to ask questions</h3>
+
+        <div class="messages__history"></div>
+          <div class="fallback"></div>
+        <div class="inbox__messages">
+        </div>
+
+        <form class="message_form">
+            <input type="text" class="message_form__input" placeholder="Type a message" />
+            <button class="message_form__button" type="submit">
+              Enter
+            </button>
+          </form>
+
+          <h5> I aim to reply within 24hrs Monday - Friday </h5>
+          <h5> Alternatively you can email me by clicking <a href="mailto:u05eh23@abdn.ac.uk">here.</a> </h5>
+
+        <div class= "faqs">
+        <button class="button" onclick="displayAnswer(1)">Current Avaliability</button>
+
+        <button class = "button" onclick="displayAnswer(2)">Qualifications</button>
+ 
+        <button class = "button" onclick="displayAnswer(3)">Pricing</button>
+
+        <button class = "button" onclick="displayAnswer(4)">Technology </button>
+        </div>
+        <div id="answerDisplay"></div>
+
+        <script>
+        function displayAnswer(answerNumber) {
+            var answerDisplay = document.getElementById("answerDisplay");
+            switch (answerNumber) {
+                case 1:
+                    answerDisplay.innerText = "As seen on the about page I am currently in university therefore have limited availability. My hours vary depending on my Uni Schedule but continue to be free most evenings and weekends. Feel free to drop a message or send an email to find out more about this!";
+                    break;
+                case 2:
+                    answerDisplay.innerText = "You will find detailed information on my current qualifications on the about page. I aim to keep this as updated as possible.";
+                    break;
+                case 3:
+                    answerDisplay.innerText = "Dependant on each individual project. Please send an email to get a quote.";
+                    break;
+                case 4:
+                    answerDisplay.innerText = "This website was made using HTML5 and styled using CSS. It also includes features from javascript and bootstrap. The website is backed up via github and coded on codio. Send a message to find out more.";
+                    break;
+
+            }
+        }
+    </script>
+
+
+      </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/js/client.js"></script>
+  </body>
+</html>

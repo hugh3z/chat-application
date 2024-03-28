@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="/css/chat.css" />
+  </head>
+  <body>
+
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="chat.html">Contact</a>
+      </nav>   
+      <br>
+      <hr>
+      <div class="content"> </div>
+        <h1>About Page</h1>
+        <h2> Find out more about me </h>
+
+
+    <div class="card mb-4">
+      <div class="card-header">
+        <h3>Hobbies and Extra-curriculers</h3>
+      </div>
+      <div class="card-body">
+        
+        <h4> Volunteering </h4>
+        <p> I have volunteered with various organisations throughout my life time. The one that has had the biggest impact on my life is SHIP.
+          This stands for Support, Help and Integration in Perthshire. It is a charity in my home town for young people with additional support needs
+          I volunteered for 2 years however I now have a part time job there. This charity has helped me to improve alot of skills. My communication skills 
+          are very strong as I have had the chance to interact with both parents and children using different communication methods.
+          This relates to my work in web development as I have had first hand experience in the accesibility of technology. I aim to make all my websites
+          have suitable colour schemes and easy navigation. Click on the image below to find out more or get involved!
+        </p>
+        <a href="https://www.ship-perthshire.co.uk/">
+        <img src="images/logo.jpg" alt="Ship Logo" >
+        </a>
+
+        <h4> Within School</h4>
+        <p> In school I took part in a wide variety of the roles available to me. In my final year at school I was part of the head team.
+          This role required me to have good organisational skills. I had a large involvement in organising school events such as Winterball. 
+          This skill is transferable into my work in web development as it makes for good time management within my websites. This is because
+          due to organisation skills before every project I create a time plan and a design plan. This means every project meets its deadline
+          while still being high quality.
+        </p>
+        
+
+        <h4> Dance </h4>
+        <p> Dance is one of my current hobbies. I attend classes weekly. I love the social aspect of dance and all the group work it comes with.
+          Creating dances and learning to trust each other are valuable group work skills that I thank dance for. The same love for group work
+          is still with me in my web development career. I really enjoy getting to be creative with a group and seeing the end result in the form of a website!
+          It means I get to be constantly learning new styles and techniques from everyone around me. Currently I dance with Aberdeen Dance society which you can find out more about below. </p>
+        <a href="https://www.audancesociety.co.uk/">
+        Click here to find out more!
+        </a>
+      </div>
+    </div>
+
+
+    <div class="card mb-4">
+      <div class="card-header">
+        <h3>Qualifications
+        </h3>
+      </div>
+      <div class="card-body">
+
+        <h4> Advanced and Highers </h4>
+        <p> During my final two years at school I build up a strong array of highers, including two advanced highers. Use the list below to see the grades achieved. </p>
+        <div class="accordion">
+        <div class="accordion-item">
+          <div class="accordion-item-header">Advanced Higher Computer Science</div>
+          <div class="accordion-item-content">
+            D
+          </div>
+          </div>
+        <div class="accordion-item">
+          <div class="accordion-item-header">Advanced Higher Modern Studies</div>
+          <div class="accordion-item-content">
+            B
+          </div>
+          </div>
+        <div class="accordion-item">
+          <div class="accordion-item-header">Higher Maths</div>
+          <div class="accordion-item-content">
+            A
+          </div>
+          </div>
+        <div class="accordion-item">
+          <div class="accordion-item-header">Higher English</div>
+          <div class="accordion-item-content">
+            B
+          </div>
+          </div>
+        <div class="accordion-item">
+          <div class="accordion-item-header">Higher French</div>
+          <div class="accordion-item-content">
+            B
+          </div>
+          </div>
+        <div class="accordion-item">
+          <div class="accordion-item-header">Higher Computer Science</div>
+          <div class="accordion-item-content">
+            A
+          </div>
+          </div>
+        <div class="accordion-item">
+          <div class="accordion-item-header">Higher Modern Studies</div>
+          <div class="accordion-item-content">
+            A
+          </div>
+          </div>
+        <div class="accordion-item">
+          <div class="accordion-item-header">Higher Administration</div>
+          <div class="accordion-item-content">
+            B
+          </div>
+          </div>
+        <div class="accordion-item">
+          <div class="accordion-item-header">Higher Physics</div>
+          <div class="accordion-item-content">
+            C
+          </div>
+          </div>
+        </div>
+        
+        <br>
+
+        <h4> National 5s </h4>
+        <p> There were two national 5s I did not carry on to higher, find the grades below. For any enquires on National 5 Grades
+          not seen below please use the chat feature or find my email<a href ="chat.html"> here </a>
+          </p>
+
+        <div class="accordion">
+        <div class="accordion-item">
+          <div class="accordion-item-header">National 5 Biology</div>
+          <div class="accordion-item-content">
+            A
+          </div>
+          </div>
+        <div class="accordion-item">
+          <div class="accordion-item-header">National 5 Drama</div>
+          <div class="accordion-item-content">
+            A
+          </div>
+          </div>
+        </div>
+        </div>
+    </div>
+        
+
+      <script>
+      var accordionItems = document.querySelectorAll('.accordion-item');
+      accordionItems.forEach(function(item) {
+        var header = item.querySelector('.accordion-item-header');
+        var content = item.querySelector('.accordion-item-content');
+        header.addEventListener('click', function() {
+        header.classList.toggle('active');
+        content.classList.toggle('active');
+        });
+      });
+    </script>
+
+    <div class="card mb-4">
+      <div class="card-header">
+        <h3>Extras</h3>
+      </div>
+
+      <div class="card-body">
+
+        <h4>St. Andrews Cathedral</h4>
+        <p>The ruins of St. Andrews Cathedral are one of the most iconic landmarks in the town. 
+        Built in the 12th century, it was once the largest church in Scotland and an important center of pilgrimage. 
+        Today, visitors can explore the remains of the cathedral, including the impressive west front and St. Rule's Tower, and learn about its fascinating history.
+        Click on the image below ot find out more!</p>
+        <a href="https://www.historicenvironment.scot/visit-a-place/places/st-andrews-cathedral/">
+        <img alt="st andrews cathedral" src="images/st_andrews_cathedral.jpg"/ class = "center">
+        </a>
+
+        <br>
+
+        <h4>St. Andrews Castle</h4>
+        <p>Perched on a cliff overlooking the North Sea, St. Andrews Castle is another historic landmark worth visiting. 
+        Built in the 13th century, the castle played a crucial role in the history of Scotland, serving as a royal residence and fortress. 
+        Highlights of the castle include the underground mine and counter-mine, the bottle dungeon, and the stunning coastal views from the battlements.
+        Click on the image below to find out more!</p>
+        <a href= "https://www.historicenvironment.scot/visit-a-place/places/st-andrews-castle/"> 
+        <img alt="st andrews castle" src="images/st_andrews_castle.jpg"/ class= "center">
+        </a> 
+      </div>
+    </div>
+
+    <div class="card mb-4">
+      <div class="card-header">
+        <h3>UNIVERSITY</h3>
+      </div>
+
+      <div class="card-body">
+        <p> Discover the University of St. Andrews, Scotland's oldest and most esteemed institution of higher learning.
+        Founded in 1413, this historic university boasts a rich legacy of academic excellence and intellectual tradition. 
+        Explore its picturesque campus, wander through centuries-old buildings, and immerse yourself in the vibrant atmosphere of learning and discovery.
+        From its storied past to its innovative present, the University of St. Andrews offers visitors a captivating glimpse into the heart of Scottish education and culture. 
+        Click on the image below to visit the official website!</p> 
+        <a href = "https://www.st-andrews.ac.uk/about/">
+        <img alt="html/images/st andrews uni" src="images/st andrews uni.jpg"/ class ="center">
+        </a> 
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>
