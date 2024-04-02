@@ -40,8 +40,8 @@
             </button>
           </form>
 
-          <p> I aim to reply within 24hrs Monday - Friday </p>
-          <p> Alternatively you can email me by clicking <a href="mailto:u05eh23@abdn.ac.uk">here.</a>
+          <h5> I aim to reply within 24hrs Monday - Friday </h5>
+          <h5> Alternatively you can email me by clicking <a href="mailto:u05eh23@abdn.ac.uk">here.</a> </h5>
 
         <div class= "faqs">
         <button class="button" onclick="displayAnswer(1)">Current Avaliability</button>
@@ -70,14 +70,45 @@
                 case 4:
                     answerDisplay.innerText = "This website was made using HTML5 and styled using CSS. It also includes features from javascript and bootstrap. The website is backed up via github and coded on codio. Send a message to find out more.";
                     break;
-                default:
-                    answerDisplay.innerText = "Invalid answer.";
+
             }
         }
     </script>
 
 
+      <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+        <div class="card3">
+          <div class="card-body">
+            <h4 class="card-title">Notification Area</h4>
+
+            <div id="userNotifications"></div>
+            <div id="typingNotifications"></div>
+
+          </div>
+        </div>
       </div>
+    <script>
+  // Connect to the Socket.IO server
+  const socket = io();
+
+  // Listen for user joined event
+  socket.on("user joined", function(data) {
+    const userNotifications = document.getElementById("userNotifications");
+    userNotifications.innerHTML = `${data.user} has joined the chat. Active users: ${data.activeUsers.join(", ")}`;
+  });
+
+  // Listen for user disconnected event
+  socket.on("user disconnected", function(data) {
+    const userNotifications = document.getElementById("userNotifications");
+    userNotifications.innerHTML = `${data.user} has left the chat. Active users: ${data.activeUsers.join(", ")}`;
+  });
+
+  // Listen for user typing event
+  socket.on("user typing", function(data) {
+    const typingNotifications = document.getElementById("typingNotifications");
+    typingNotifications.innerHTML = `${data.user} is typing...`;
+  });
+</script>
 
     <script src="/socket.io/socket.io.js"></script>
     <script src="/js/client.js"></script>

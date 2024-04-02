@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="/css/chat.css" />
+  </head>
+  <body>
+
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="chat.html">Contact</a>
+      </nav>   
+      <br>
+      <hr>
+      <div class="content"> </div>
+        <h1>About Page</h1>
+        <h2> Hello! My name is Ellen Hughes and I am an 18 year old computer science student at the University of Aberdeen.
+              I have made this website to showcase my skills within web development. During my time at school I have been lucky enough to 
+              have many opportunities. This has allowed me to have many hobbies and gain lots of unique skills. </h2>
+
+
+    <div class="card mb-4">
+      <div class="card-header">
+        <h3>Hobbies and Extra-curriculers</h3>
+      </div>
+      <div class="card-body">
+        
+        <h4> Volunteering </h4>
+        <p> I have volunteered with various organisations throughout my life time. The one that has had the biggest impact on my life is SHIP.
+          This stands for Support, Help and Integration in Perthshire. It is a charity in my home town for young people with additional support needs
+          I volunteered for 2 years however I now have a part time job there. This charity has helped me to improve alot of skills. My communication skills 
+          are very strong as I have had the chance to interact with both parents and children using different communication methods.
+          This relates to my work in web development as I have had first hand experience in the accesibility of technology. I aim to make all my websites
+          have suitable colour schemes and easy navigation. Click on the image below to find out more or get involved!
+        </p>
+        <a href="https://www.ship-perthshire.co.uk/">
+        <img src="images/logo.jpg" alt="Ship Logo" >
+        </a>
+
+        <h4> Within School</h4>
+        <p> In school I took part in a wide variety of the roles available to me. In my final year at school I was part of the head team.
+          This role required me to have good organisational skills. I had a large involvement in organising school events such as Winterball. 
+          This skill is transferable into my work in web development as it makes for good time management within my websites. This is because
+          due to organisation skills before every project I create a time plan and a design plan. This means every project meets its deadline
+          while still being high quality.
+        </p>
+        
+
+        <h4> Dance </h4>
+        <p> Dance is one of my current hobbies. I attend classes weekly. I love the social aspect of dance and all the group work it comes with.
+          Creating dances and learning to trust each other are valuable group work skills that I thank dance for. The same love for group work
+          is still with me in my web development career. I really enjoy getting to be creative with a group and seeing the end result in the form of a website!
+          It means I get to be constantly learning new styles and techniques from everyone around me. Currently I dance with Aberdeen Dance society which you can find out more about below. </p>
+        <a href="https://www.audancesociety.co.uk/">
+        Click here to find out more!
+        </a>
+      </div>
+    </div>
+
+
+    <div class="card mb-4">
+      <div class="card-header">
+        <h3>Qualifications
+        </h3>
+      </div>
+      <div class="card-body">
+
+        <h4> Advanced and Highers </h4>
+        <p> During my final two years at school I build up a strong array of highers, including two advanced highers. Use the list below to see the grades achieved. </p>
+        <div class="accordion">
+        <div class="accordion-item">
+          <div class="accordion-item-header">Advanced Higher Computer Science</div>
+          <div class="accordion-item-content">
+            D
+          </div>
+          </div>
+        <div class="accordion-item">
+          <div class="accordion-item-header">Advanced Higher Modern Studies</div>
+          <div class="accordion-item-content">
+            B
+          </div>
+          </div>
+        <div class="accordion-item">
+          <div class="accordion-item-header">Higher Maths</div>
+          <div class="accordion-item-content">
+            A
+          </div>
+          </div>
+        <div class="accordion-item">
+          <div class="accordion-item-header">Higher English</div>
+          <div class="accordion-item-content">
+            B
+          </div>
+          </div>
+        <div class="accordion-item">
+          <div class="accordion-item-header">Higher French</div>
+          <div class="accordion-item-content">
+            B
+          </div>
+          </div>
+        <div class="accordion-item">
+          <div class="accordion-item-header">Higher Computer Science</div>
+          <div class="accordion-item-content">
+            A
+          </div>
+          </div>
+        <div class="accordion-item">
+          <div class="accordion-item-header">Higher Modern Studies</div>
+          <div class="accordion-item-content">
+            A
+          </div>
+          </div>
+        <div class="accordion-item">
+          <div class="accordion-item-header">Higher Administration</div>
+          <div class="accordion-item-content">
+            B
+          </div>
+          </div>
+        <div class="accordion-item">
+          <div class="accordion-item-header">Higher Physics</div>
+          <div class="accordion-item-content">
+            C
+          </div>
+          </div>
+        </div>
+        
+        <br>
+
+        <h4> National 5s </h4>
+        <p> There were two national 5s I did not carry on to higher, find the grades below. For any enquires on National 5 Grades
+          not seen below please use the chat feature or find my email<a href ="chat.html"> here </a>
+          </p>
+
+        <div class="accordion">
+        <div class="accordion-item">
+          <div class="accordion-item-header">National 5 Biology</div>
+          <div class="accordion-item-content">
+            A
+          </div>
+          </div>
+        <div class="accordion-item">
+          <div class="accordion-item-header">National 5 Drama</div>
+          <div class="accordion-item-content">
+            A
+          </div>
+          </div>
+        </div>
+        </div>
+    </div>
+        
+
+      <script>
+      var accordionItems = document.querySelectorAll('.accordion-item');
+      accordionItems.forEach(function(item) {
+        var header = item.querySelector('.accordion-item-header');
+        var content = item.querySelector('.accordion-item-content');
+        header.addEventListener('click', function() {
+        header.classList.toggle('active');
+        content.classList.toggle('active');
+        });
+      });
+    </script>
+
+    <div class="card mb-4">
+      <div class="card-header">
+        <h3>Previous Work</h3>
+      </div>
+
+      <div class="card-body">
+
+        <h4>School</h4>
+        <p>I studied the subject of computer science for all 6 years at highschool. Throughout this time I've continued to expand my website development skills,
+          I have made a range of websites at different levels. In the later years of school I leared Javascript and PHP these improved my web skills significantly. 
+          PHP has allowed me to create dynamic and interactive websites. For my final project in advanced higher I used PHP to connect a basic snake game to a database of users.
+          Javascript has alos been a langauge that has helped me with the design of websites greatly. Upon learning Javascript in Higher computer science my wesbites are more appealing.
+          I love the use of Javascript buttons to make information hide and appear, this keeps my websites looking clean while still having all the necessary information. </p>
+        </a>
+
+        <br>
+
+        <h4>University</h4>
+        <p>During my first year an university I revisted HTML5 and Javascript which was a great refresher and expanded what I already know. 
+          On top of this I learned Bootstrap. This has helped with the design of my websites. It has helped me significantly in making sure my
+          websites are repsonsive on all device types. Bootstrap and Java script have been used throughout this website to ensure it works on multiple devices
+          and still has strong and consistent design. I look forward to learning more about web development in University to continue improving my websites. 
+        </p>
+
+        </a> 
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
