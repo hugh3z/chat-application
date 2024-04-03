@@ -75,40 +75,7 @@
         }
     </script>
 
-
-      <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
-        <div class="card3">
-          <div class="card-body">
-            <h4 class="card-title">Notification Area</h4>
-
-            <div id="userNotifications"></div>
-            <div id="typingNotifications"></div>
-
-          </div>
-        </div>
-      </div>
-    <script>
-  // Connect to the Socket.IO server
-  const socket = io();
-
-  // Listen for user joined event
-  socket.on("user joined", function(data) {
-    const userNotifications = document.getElementById("userNotifications");
-    userNotifications.innerHTML = `${data.user} has joined the chat. Active users: ${data.activeUsers.join(", ")}`;
-  });
-
-  // Listen for user disconnected event
-  socket.on("user disconnected", function(data) {
-    const userNotifications = document.getElementById("userNotifications");
-    userNotifications.innerHTML = `${data.user} has left the chat. Active users: ${data.activeUsers.join(", ")}`;
-  });
-
-  // Listen for user typing event
-  socket.on("user typing", function(data) {
-    const typingNotifications = document.getElementById("typingNotifications");
-    typingNotifications.innerHTML = `${data.user} is typing...`;
-  });
-</script>
+    <div class="notification-area"></div>
 
     <script src="/socket.io/socket.io.js"></script>
     <script src="/js/client.js"></script>

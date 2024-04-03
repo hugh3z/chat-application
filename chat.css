@@ -200,44 +200,52 @@ img{
   border-width: 20px:
 }
 
-  /* Style for the accordion */
-  .accordion {
-    border: 1px solid #007bff;
-    border-radius: 5px;
-    overflow: hidden;
+
+.accordion {
+  border: 1px solid #007bff;
+  border-radius: 5px;
+  overflow: hidden;
   }
 
-  /* Style for accordion item headers */
-  .accordion-item-header {
-    background-color: #ffe8a2;
-    color: #007bff;
-    cursor: pointer;
-    padding: 10px;
-    border-bottom: 1px solid #ccc;
+
+.accordion-item-header {
+  background-color: #ffe8a2;
+  color: #007bff;
+  cursor: pointer;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
   }
 
-  /* Style for active accordion item header */
-  .accordion-item-header.active {
+
+.accordion-item-header.active {
+  background-color: #007bff;
+  color: #fff;
+  }
+
+.accordion-item-content {
+  display: none;
+  padding: 10px;
+  background-color: #fff;
+  }
+
+.accordion-item-content.active {
+  display: block;
+  }
+
+
+.notification-area {
+    position: fixed;
+    bottom: 500px;
+    right: 300px;
+    max-width: 600px;
     background-color: #007bff;
     color: #fff;
-  }
+    padding: 50px;
+    border-radius: 5px;
+    box-shadow: #007;
+    overflow: auto;
+}
 
-  /* Style for accordion item content */
-  .accordion-item-content {
-    display: none;
-    padding: 10px;
-    background-color: #fff;
-  }
-
-  .accordion-item-content.active {
-    display: block;
-  }
-
-#userNotifications,
-#typingNotifications {
-  margin-bottom: 10px;
-  padding: 10px;
-  background-color: #f0f0f0;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+.notification {
+    margin-bottom: 5px;
 }
